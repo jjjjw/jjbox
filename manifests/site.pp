@@ -68,13 +68,25 @@ node default {
   include nodejs::v0_8
   include nodejs::v0_10
 
-  # subl
-  # For the latest build of v3
+  # jj
+  include python
+  include mysql
+  include redis
+  
   include sublime_text
   sublime_text::package { 'Emmet':
     source => 'sergeche/emmet-sublime'
   }
-
+  include hipchat
+  include iterm2::stable
+  include dashlane
+  include chrome
+  include heroku
+  include gitx
+  
+  git::config::global { 'user.email':
+    value  => 'jj.weber@gmail.com'
+  }
 
   # common, useful packages
   package {
