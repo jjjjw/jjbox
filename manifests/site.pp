@@ -75,8 +75,8 @@ node default {
   include foreman
 
   include sublime_text
-  sublime_text::package { 'Emmet':
-    source => 'sergeche/emmet-sublime'
+  sublime_text::package { 'LESS':
+    source => 'danro/LESS-sublime'
   }
   include hipchat
   include iterm2::stable
