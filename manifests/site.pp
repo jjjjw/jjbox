@@ -72,6 +72,7 @@ node default {
   include python
   include mysql
   include redis
+  include foreman
 
   include sublime_text
   sublime_text::package { 'Emmet':
@@ -84,6 +85,7 @@ node default {
   include heroku
   include gitx
   include sequel_pro
+
 
   git::config::global { 'user.email':
     value  => 'jj.weber@gmail.com'

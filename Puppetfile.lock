@@ -159,6 +159,7 @@ DEPENDENCIES
   dashlane (= 1.0.1)
   dnsmasq (= 2.0.0)
   foreman (= 1.2.0)
+  foreman (= 1.2.0)
   gcc (= 2.2.0)
   git (= 2.5.0)
   gitx (= 1.2.0)
